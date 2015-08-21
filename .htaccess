@@ -1,0 +1,19 @@
+# @author  Armande Bayanes
+# Settings below to handle larger uploads.
+# The current setting below for upload_max_filesize & post_max_size means can upload 10 files with 1GB each in size simultaneously.
+
+# The maximum size for a single POST.
+# Set to 1G.
+php_value upload_max_filesize 1G
+
+# The maximum size for all POSTs.
+# Set to 10G.
+php_value post_max_size 10G
+
+# How much time should be allowed to retrieve data from POST.
+# Set to 1 hour. Higher value could be too much.
+php_value max_input_time 3600
+
+# Limit on the allowed size of an HTTP request message body.
+# Set to 0 for no limit.
+LimitRequestBody 0
